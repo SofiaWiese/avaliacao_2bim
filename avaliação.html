@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Página pessoal de Sofia Wiese - lembranças, família e sonhos.">
+  <title>Avaliação programação p internet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: rgb(255, 240, 250);
+      color: rgb(82, 82, 82);
+    }
+
+    header {
+      background-color: #c8a2c8;
+      padding: 15px 0;
+    }
+
+    .menu ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .menu {
+      color: #ffe4f3;
+    }
+
+    .menu-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 50px;
+      border-radius: 100px;
+    }
+
+    .inicio {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .inicio-conteudo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .info-texto {
+      max-width: 300px;
+      text-align: left;
+    }
+
+    .foto-perfil {
+      width: 150px;
+      border-radius: 50%;
+      border: 4px solid #c8a2c8;
+      margin-bottom: 20px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #c8a2c8;
+      margin-bottom: 30px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .bloco {
+      background-color: rgb(255, 255, 255);
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .bloco img {
+      width: 50%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #c8a2c8;
+      color: rgb(254, 254, 254);
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    
+    .texto-rodape {
+      color: #fce4ec;
+    }
+
+    .texto-rodape-instagram {
+      color:#7f5765;
+    }
+
+    .botao_cima {
+      position: fixed; 
+      bottom: 20px; 
+      right: 20px; 
+      background: #c8a2c8; 
+      color: rgb(255, 255, 255); 
+      padding: 10px 15px; 
+      border-radius: 50%;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .menu ul {
+        flex-direction: row;
+        gap: 10px;
+      }
+
+      .galeria {
+        flex-direction: column;
+      }
+
+      .foto-perfil {
+        width: 120px;
+        margin-bottom: 10px;
+      }
+
+      .inicio-conteudo {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .info-texto {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="menu" id="menu">
+      <div class="menu-container">
+        <img src="logo_s.png" alt="Logo da Sofia" class="logo" />
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#lembrancas">Lembranças</a></li>
+          <li><a href="#pessoas">Pessoas</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="inicio">
+      <div class="inicio-conteudo">
+        <img src="foto_sofia.jpg" alt="Minha Foto" class="foto-perfil" />
+        <div class="info-texto">
+          <h1>Sofia Wiese</h1>
+          <p><strong>Profissão:</strong> Futura arquiteta</p>
+          <p><strong>Origem:</strong> Curitiba - Paraná</p>
+          <p><strong>Idade:</strong> 14 anos</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="lembrancas" class="lembrancas">
+      <h2> Lembranças</h2>
+      <div class="galeria">
+        <img src="foto_amigas.jpeg" alt="Minha viagem de formatura" />
+        <img src="foto_copa.jpeg" alt="Primeira copa do mundo com o meu irmão" />
+        <img src="foto_turma.jpeg" alt="Minha turma de 2024" />
+        <img src="foto_vo.jpeg" alt="Eu e meu avô" />
+      </div>
+    </section>
+
+    <section id="pessoas" class="pessoas">
+     <div class="bloco">
+        <h2> Pessoas, coisas ou sonhos</h2>
+        <img src="foto_familia.jpeg" alt="Minha família" />
+        <h3>Minhas pessoas favoritas: Minha mãe, meu pai e meu irmão.</h3>
+        <p>Minha família de casa sempre foi o meu porto seguro. Desde quando eu era pequena minha mãe e meu irmão nunca saíram de perto de mim, já meu pai sempre trabalhou viajando, mas não por isso deixou de dar amor e atenção para mim e toda a família. Eu amo muito eles e sem dúvidas são a coisa mais especial do mundo pra mim. </p>
+     </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="texto-rodape">&copy; 2025 - <a class="texto-rodape-instagram" href="https://www.instagram.com/wiese.sofia/"> @wiese.sofia </a></p>
+  </footer>
+
+  <a href="#menu" class="botao_cima" aria-label="Voltar ao topo">↑</a>
+
+</body>
+</html>
